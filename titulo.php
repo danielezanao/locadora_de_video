@@ -50,8 +50,7 @@
         <p>
             <button type="submit" value="submit" name="submit" id="submit">Enviar</button>
 		    <button type="reset" name="apagar">Apagar</button>
-            <button type="submit">teste</button>
-        </p>
+           
     </form>
 
 </div>
