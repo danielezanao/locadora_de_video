@@ -7,11 +7,12 @@
     <meta name="author" content="Daniele Zanão">
 	<meta name="keywoeds" content="cadastro, cadastro de videos, locadora, locadora de video">
 	<meta name="description" content="Site para o cadastramento de titulos de videos de uma locadora">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Locadora de videos</title>
 </head>
-<body>
+<body  class= "container-fluid">
         <header>
 				<nav>
   					<ul>
@@ -24,23 +25,28 @@
 
         <h1>Cadastro do usuario</h1>
         <h3>Utilize o formulario abaixo para se cadastrar no sistema</h3>
-<div>
+<div class="col-3" >
+    <form action="titulo.php" method="post">
         <p>
             <label>Nome</label><br>
-            <input type="text" name="nome" required>
+            <input type="text" name="nome" required class="form-control" >
         </p>
         <p>
             <label>Gênero</label><br>
-            <input type="text" name="genero" required>
+            <input type="text" name="genero" required class="form-control" >
         </p>
         <p>
             <label>CPF</label><br>
-            <input type="number" name="numero" required>
+            <input type="number" name="numero" required  class="form-control">
+        </p>
+        <p>
+            <label> Senha</labek><br>
+            <input type="text" name="senha" required  class="form-control">
         </p>
         <p>
 
-        <button type="submit" value="submit" name="submit" id="submit">Enviar</button>
-		<button type="reset" name="apagar">Apagar</button>
+        <button type="submit" value="submit" name="submit" id="submit"class="btn btn-outline-secondary" >Enviar</button>
+		<button type="reset" name="apagar"class="btn btn-outline-secondary" >Apagar</button>
         </p>
     </form>
 </div>
